@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>
+      Places
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let location of locations.data">
+      <ion-avatar item-left>
+        <img src="assets/icon/favicon.ico">
+      </ion-avatar>
+      <h2>{{location.title}}</h2>
+      <p>{{location.distance}} Kms</p>
+    </ion-item>
+  </ion-list>
+   
+</ion-content>
